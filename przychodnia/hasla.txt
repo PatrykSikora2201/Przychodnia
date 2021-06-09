@@ -1,0 +1,6 @@
+MariaDB
+login: root
+haslo: OddajRower
+
+port 1111
+MariaDB
