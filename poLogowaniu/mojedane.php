@@ -64,13 +64,9 @@ if ($polaczenie->connect_errno!=0)
             </ul>
 
             <form class="form-inline" action="logout_script.php">
-                <p  style="margin-right: 10px; margin-bottom: 30px">Witaj Marek Przegub</p>
+                <p  style="margin-right: 10px; margin-bottom: 30px">Witaj </p>
                                 <?php
-//                                echo $_SESSION['id'];
-//                                    $result = $polaczenie -> query("SELECT IMIE, NAZWISKO FROM pacjenci WHERE ID_PACJENTA=".$_SESSION['id']);
-//                                    $row= mysqli_fetch_assoc($result);
-//                                    echo "<p>".$row['IMIE']." ".$row['NAZWISKO']."</p>";
-
+                                    echo "<p>".$_SESSION['imie']." ".$_SESSION['nazwisko']."</p>";
                                 ?>
 
                 <button class="btn btn-light shadow bg-body rounded" type="submit">Wyloguj sie</button>
@@ -93,6 +89,10 @@ if ($polaczenie->connect_errno!=0)
 
                 <h1>Dane użytkownika</h1>
 <!--                imie i nazwusko uzytkownika-->
+                <p  style="margin-right: 10px; margin-bottom: 30px">Witaj </p>
+                <?php
+                echo "<h3>".$_SESSION['imie']." ".$_SESSION['nazwisko']."</h3>";
+                ?>
 
             </header>
 
@@ -110,11 +110,11 @@ if ($polaczenie->connect_errno!=0)
                 <div class="col-sm-6 col-md-5" style="text-align: left">
 
                     <figure>
-<!--                        --><?php
-//                        $imie = $_SESSION['imie'];
-//                        echo $imie;
-//                        ?>
-                        Marek
+                        <?php
+                        $imie = $_SESSION['imie'];
+                        echo $imie;
+                        ?>
+
                     </figure>
 
                 </div>
@@ -131,11 +131,11 @@ if ($polaczenie->connect_errno!=0)
                 <div class="col-sm-6 col-md-5" style="text-align: left">
 
                     <figure>
-<!--                        --><?php
-//                        $nazw = $_SESSION['nazwisko'];
-//                        echo $nazw;
-//                        ?>
-                        Przegub
+                        <?php
+                        $nazw = $_SESSION['nazwisko'];
+                        echo $nazw;
+                        ?>
+
                     </figure>
 
                 </div>
@@ -150,12 +150,12 @@ if ($polaczenie->connect_errno!=0)
                 <div class="col-sm-6 col-md-5" style="text-align: left">
 
                     <figure>
-<!--                        --><?php
-//                        $dol = $_SESSION['dolegliwosc'];
-//                        echo $dol;
-//                        ?>
+                        <?php
+                        $dol = $_SESSION['dolegliwosc'];
+                        echo $dol;
+                        ?>
 
-                        Zapalenie ucha
+
                    </figure>
 
                 </div>
@@ -168,12 +168,11 @@ if ($polaczenie->connect_errno!=0)
 
                 <div class="col-sm-6 col-md-5" style="text-align: left">
                     <figure>
-<!--                        --><?php
-//                        $mail = $_SESSION['mail'];
-//                        echo $mail;
-//                        ?>
+                        <?php
+                        $mail = $_SESSION['mail'];
+                        echo $mail;
+                        ?>
 
-                        marekprze@wp.pl
                     </figure>
                 </div>
 
