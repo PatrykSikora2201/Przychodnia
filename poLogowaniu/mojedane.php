@@ -39,7 +39,7 @@ if ($polaczenie->connect_errno!=0)
 
     <nav class="navbar navbar-dark bg-jumpers navbar-expand-lg">
 
-        <a class="navbar-brand" href="#"><img src="../img/greek_cross.png" width="30" height="30" class="d-inline-block mr-1 align-bottom"> <a style="color:black">Max</a>Health.com</a></a>
+        <a class="navbar-brand" href="#"><img src="../img/greek_cross.png" width="30" height="30" class="d-inline-block mr-1 align-bottom"><a style="color:black">Max</a>Health.com</a></a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainmenu" aria-controls="mainmenu" aria-expanded="false" aria-label="Przełącznik nawigacji">
             <span class="navbar-toggler-icon"></span>

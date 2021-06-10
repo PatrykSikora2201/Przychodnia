@@ -40,8 +40,8 @@ $haslo = $_POST['haslo'];
 
 $login = htmlentities($login, ENT_QUOTES, "UTF-8");
 $haslo = htmlentities($haslo, ENT_QUOTES, "UTF-8");
-$haslo=md5($haslo);
-
+$haslo=sha1($haslo);
+echo $haslo;
 if ($rezultat = @$polaczenie->query("SELECT * FROM pacjenci WHERE LOGIN='$login' and HASLO='$haslo'")){
     $user_num = $rezultat->num_rows;
     if ($user_num > 0) {
